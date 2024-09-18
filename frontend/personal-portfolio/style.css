@@ -8,7 +8,6 @@
 body {
 	background-color: var(--color-1);
 	color: var(--color-4);
-	transition: 2s;
 }
 
 .switch {
@@ -38,7 +37,7 @@ input[type="checkbox"] {
 	bottom: 4px;
 	left: 4px;
 	background-color: var(--color-2);
-	transition: 4s;
+	transition: 1s;
 }
 .dark {
 	background-color: var(--color-4);
