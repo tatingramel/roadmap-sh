@@ -84,3 +84,28 @@ a:active {
 .dark a:active {
 	color: var(--color-1);
 }
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+.border-r {
+	border-right: 1px solid var(--color-3);
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.h-400 {
+	height: 400px;
+}
+.br {
+	border: 1px solid var(--color-3);
+	padding-bottom: 4px;
+}
+.skills li {
+	padding: 4px 0;
+	background-color: var(--color-2);
+	color: var(--color-4);
+	border-bottom: 1px solid var(--color-1);
+}

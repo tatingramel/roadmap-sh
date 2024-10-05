@@ -1,0 +1,25 @@
+.row {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class=*"cl-"] {
+	width: 100%;
+}
+@media screen and (min-width: 680px) {
+	.cl-4 {
+	  height: inherit;
+	  box-sizing: border-box;
+		float: left;
+		width: 33.33%;
+	}
+	.cl-6 {
+		float: left;
+		width: 50%;
+	}
+}

@@ -23,6 +23,8 @@
 		/>
 		<link rel="stylesheet" href="fonts.css" type="text/css" media="all" />
 		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="responsive.css" type="text/css" media="all" />
+
 		<script
 			defer
 			src="script.js"
@@ -30,73 +32,103 @@
 			charset="utf-8"
 		></script>
 	</head>
-	<body id="bodyElement">
+	<body>
 		<main>
-			<header>
-				<h1>Ramel Tating</h1>
-				<h2>Frontend Developer</h2>
-				<br />
-				<label class="switch">
-					<input id="toggle" type="checkbox" />
-					<span class="slider"></span>
-				</label>
-			</header>
+			<div class="row">
+				<div class="cl-6">
+					<header>
+						<div class="cl-6">
+							<label class="switch">
+								<input id="toggle" type="checkbox" />
+								<span class="slider"></span>
+							</label>
+						</div>
+						<div class="cl-6">
+							<h1 class="center">Ramel Tating</h1>
+						</div>
+					</header>
+				</div>
+				<div class="cl-6">
+					<div class="center">
+						<nav>
+							<a href="/">Home</a> / <a href="project.html">Projects</a> /
+							<a href="article.html">Articles</a> /
+							<a href="contact.html">Contacts</a>
+						</nav>
+					</div>
+				</div>
+			</div>
 			<br />
-			<nav>
-				<a href="/">Home</a> / <a href="project.html">Projects</a> /
-				<a href="article.html">Articles</a> /
-				<a href="contact.html">Contacts</a>
-			</nav>
 			<br />
+			<div class="row">
+				<h1 class="center">Frontend Developer</h1>
+			</div>
+			<br />
+			<br />
+			<br />
+			<div class="row center h-400">
+				<div class="cl-4 br">
+					<section class="experience">
+						<h2>Experience</h2>
+						<br />
+						<br />
+						<article>
+							<section>
+								<div>
+									<strong>Bundler</strong>
+									<p>Fast Toll Manufacturing Corporation</p>
+									<time datetime="2021-04">April 2021</time> -
+									<time datetime="2024-07">July 2024</time>
+								</div>
+							</section>
+							<br />
+							<hr />
+							<br />
+							<section>
+								<div>
+									<strong>Pump Attendant</strong>
+									<p>Tec Fuel and Energy Solutions Incorporated</p>
+									<time datetime="2017-01">January 2017</time> -
+									<time datetime="2020-02">February 2020</time>
+								</div>
+							</section>
+						</article>
+					</section>
+				</div>
+				<div class="cl-4 br">
+					<section class="education">
+						<h2>Education</h2>
+						<br />
+						<article>
+							<p>Electrical Installation and Maintenance NC II</p>
+							<p>City College of Cagayan de Oro</p>
+							<time datetime="2024-07">July 2024</time> -
+							<time datetime="2024-09">September 2024</time>
+							<br />
+							<br />
+							<hr />
+							<p>Pagadian City Science High School</p>
+							<time datetime="2010">2010 </time> -
+							<time datetime="2014">2014</time>
+						</article>
+					</section>
+				</div>
+				<div class="cl-4 br">
+					<section class="skills">
+						<h2>Skills</h2>
+						<br />
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Javascript</li>
+							<li>Responsive Web Design</li>
+							<li>SEO</li>
+						</ul>
+					</section>
+				</div>
+			</div>
 			<section>
-				<h2>Experience</h2>
-				<hr />
-				<article>
-					<strong>Bundler</strong>
-					<p>Fast Toll Manufacturing Corporation</p>
-					<time datetime="2021-04">April 2021</time> -
-					<time datetime="2024-07">July 2024</time>
-					<br />
-					<br />
-					<br />
-					<strong>Pump Attendant</strong>
-					<p>Tec Fuel and Energy Solutions Incorporated</p>
-					<time datetime="2017-01">January 2017</time> -
-					<time datetime="2020-02">February 2020</time>
-				</article>
-			</section>
-			<br />
-			<br />
-			<section>
-				<h2>Education</h2>
-				<hr />
-				<article>
-					<p>Electrical Installation and Maintenance NC II</p>
-					<p>City College of Cagayan de Oro</p>
-					<time datetime="2024-07">July 2024</time> -
-					<time datetime="2024-09">September 2024</time>
-					<br />
-					<br />
-					<p>Pagadian City Science High School</p>
-					<time datetime="2010">2010 </time> - <time datetime="2014">2014</time>
-				</article>
-			</section>
-			<br />
-			<br />
-			<section>
-				<h2>Skills</h2>
-				<hr />
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-					<li>Responsive Web Design</li>
-					<li>SEO</li>
-				</ul>
-			</section>
-			<br />
-			<br />
-			<section>
+			  <div class="row">
 				<h2>Reviews</h2>
 				<hr />
 				<article>
@@ -130,6 +162,7 @@
 					<i>Larry Trump</i><br />
 					<i>Software Developer</i>
 				</article>
+			  </div>
 			</section>
 		</main>
 	</body>
