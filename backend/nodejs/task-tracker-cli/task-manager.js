@@ -15,7 +15,7 @@ class TaskManager {
     const task = new Task(this.db.counter, description, status.todo);
     this.db.tasks[`task${task.id}`] = task.data();
     writeDb(JSON.stringify(this.db));
-    console.log(this.db);
+    console.log("added successfully");
   }
 
   delete(id) {
@@ -23,7 +23,7 @@ class TaskManager {
     delete this.db.tasks[`task${id}`];
     this.db.length--;
     writeDb(JSON.stringify(this.db));
-    console.log(this.db);
+    console.log("deleted sucessfully");
   }
 
   update(id, description) {
@@ -31,7 +31,7 @@ class TaskManager {
     this.db.tasks[`task${id}`].description = description;
     this.db.tasks[`task${id}`].updatedAt = new Date(Date.now()).toLocaleString();
     writeDb(JSON.stringify(this.db));
-    console.log(this.db);
+    console.log("updated successfully");
   }
 
   isExist(id, errorMsg = "[!]", isOperational = false) {
@@ -47,21 +47,23 @@ class TaskManager {
 
   //mark a task as in-progress or done  
   markInProgress(id) {
-    this.mark(id,status.pending);
+    this.mark(id, status.pending);
+    console.log("success!");
   }
   markTodo(id) {
-    this.mark(id,status.todo);
-      }
-  markDone(id){
-    this.mark(id,status.done);
+    this.mark(id, status.todo);
+    console.log("success!");
+  }
+  markDone(id) {
+    console.log("success!");
+    this.mark(id, status.done);
   }
 
-  mark(id,stats) {
+  mark(id, stats) {
     this.isExist(id, "id not in database");
     this.db.tasks[`task${id}`].updatedAt = new Date(Date.now()).toLocaleString();
     this.db.tasks[`task${id}`].status = stats;
-    writeDb(JSON.stringify(this.db))
-    console.log(this.db);
+    writeDb(JSON.stringify(this.db));
   }
   //list all task
   listAll() {
@@ -79,7 +81,7 @@ class TaskManager {
 
   list(status) {
     let counter = 1;
-    let length=this.db.counter;
+    let length = this.db.counter;
     const db = this.db.tasks;
     while (counter <= length) {
       if (this.isExist(counter, "", true)) {
@@ -113,11 +115,11 @@ if (require.main === module) {
     //taskManager.update(8, status.done);
     //taskManager.markInProgress(10);
     //taskManager.markDone(2);
-    taskManager.update(2,"task2");
+    taskManager.update(2, "task2");
     taskManager.markInProgress(4);
     taskManager.listAll();
   } catch (err) {
     console.error(err.message);
   }
 }
-module.exports=TaskManager;
+module.exports = TaskManager;
